@@ -66,7 +66,7 @@ rural01 <- get_decennial(geography = "state",
        mutate(prop_rural = (P002005/P001001),
               state = reorder(state, prop_rural))
         
-glimpse(rural01)
+# glimpse(rural01)
 
 # step 01 -- Q: how can we make this a bit more informative? what do you think
 # the cause of this viewpoint is? 
@@ -147,8 +147,8 @@ races <- c(White = "B02001_002",
 laffy <- get_acs(geography = "tract",
                  variables = races, 
                  year = 2018,
-                 state = "LA",
-                 county = "Lafayette Parish",
+                 state = "OK",
+                 county = "Oklahoma County",
                  geometry = TRUE,
                  
                  # the total population
